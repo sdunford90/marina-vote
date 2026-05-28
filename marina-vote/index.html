@@ -1,0 +1,2977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Name for the Water · F3 Fort Lauderdale Naming Contest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F4EFE6;
+  --bg-grain: #F0EADF;
+  --bg-card: #FBF7EF;
+  --bg-card-warm: #F8F2E6;
+  --ink: #1A1F2E;
+  --ink-soft: #5A6275;
+  --ink-mute: #9B9A93;
+  --rule: #D8D0BF;
+  --rule-soft: #E5DECC;
+  --coral: #E94F3D;
+  --coral-deep: #B83A2E;
+  --coral-soft: rgba(233, 79, 61, 0.07);
+  --gold: #B8954A;
+  --gold-soft: rgba(184, 149, 74, 0.10);
+  --shadow: 0 1px 3px rgba(26, 31, 46, 0.04), 0 8px 24px rgba(26, 31, 46, 0.04);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(at 8% 12%, rgba(233, 79, 61, 0.04) 0%, transparent 35%),
+    radial-gradient(at 92% 88%, rgba(184, 149, 74, 0.05) 0%, transparent 40%);
+  background-attachment: fixed;
+}
+
+::selection { background: var(--coral); color: #FFF; }
+
+/* ─── TOP BAR ─── */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: rgba(244, 239, 230, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 0.5px solid var(--rule);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.brand-mark {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.brand-mark::before,
+.brand-mark::after {
+  content: '';
+  position: absolute;
+  background: var(--coral);
+}
+.brand-mark::before {
+  width: 24px; height: 1px;
+  top: 50%; transform: translateY(-50%);
+}
+.brand-mark::after {
+  width: 1px; height: 24px;
+  left: 50%; transform: translateX(-50%);
+}
+.brand-mark span {
+  position: absolute;
+  inset: 0;
+  border: 0.5px solid var(--ink);
+  border-radius: 50%;
+}
+.brand-text {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.brand-text strong {
+  font-weight: 500;
+  font-style: normal;
+  margin-right: 6px;
+}
+.shortlist-btn {
+  background: var(--ink);
+  color: var(--bg);
+  border: none;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 18px 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  letter-spacing: 0.01em;
+}
+.shortlist-btn:hover { background: var(--coral); transform: translateY(-1px); }
+.shortlist-btn .dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--coral);
+  transition: background 0.2s;
+}
+.shortlist-btn:hover .dot { background: #FFF; }
+.shortlist-btn .num {
+  font-variant-numeric: tabular-nums;
+  min-width: 12px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* ─── HERO ─── */
+.hero {
+  padding: 88px 40px 64px;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+.kicker {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.hero .kicker { margin-bottom: 40px; }
+.hero .kicker .sep {
+  margin: 0 12px;
+  color: var(--ink-mute);
+}
+.display {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(64px, 11vw, 168px);
+  font-weight: 300;
+  font-variation-settings: "opsz" 144, "SOFT" 80;
+  letter-spacing: -0.045em;
+  line-height: 0.88;
+  margin-bottom: 56px;
+  color: var(--ink);
+}
+.display em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--coral);
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+}
+.display .small {
+  font-size: 0.55em;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--ink-soft);
+}
+.lede {
+  max-width: 52ch;
+  font-size: 17px;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  margin-bottom: 64px;
+  font-weight: 300;
+}
+.lede strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.meta-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-top: 40px;
+  border-top: 0.5px solid var(--rule);
+}
+.meta-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.meta-num {
+  font-family: 'Fraunces', serif;
+  font-size: 56px;
+  font-weight: 300;
+  font-variation-settings: "opsz" 144, "SOFT" 60;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: var(--ink);
+}
+.meta-num em {
+  font-style: italic;
+  color: var(--coral);
+}
+.meta-label {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+/* ─── FILTER RAIL ─── */
+.rail {
+  position: sticky;
+  top: 57px;
+  z-index: 40;
+  background: rgba(244, 239, 230, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 0.5px solid var(--rule);
+  border-bottom: 0.5px solid var(--rule);
+  padding: 14px 40px;
+}
+.rail-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.rail-label {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-right: 8px;
+}
+.chip {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 13px;
+  font-weight: 400;
+  background: transparent;
+  border: 0.5px solid var(--rule);
+  color: var(--ink);
+  padding: 7px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+.chip:hover { border-color: var(--ink); background: rgba(26, 31, 46, 0.04); }
+.chip.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+  font-weight: 500;
+}
+.chip .count {
+  margin-left: 6px;
+  font-size: 11px;
+  opacity: 0.6;
+  font-variant-numeric: tabular-nums;
+}
+.rail-search {
+  flex: 1;
+  min-width: 200px;
+  margin-left: auto;
+}
+.search {
+  width: 100%;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 13px;
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid var(--rule);
+  color: var(--ink);
+  padding: 6px 0;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.search:focus { border-color: var(--coral); }
+.search::placeholder { color: var(--ink-mute); font-style: italic; font-family: 'Fraunces', serif; }
+
+/* ─── MAIN ─── */
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 64px 40px 200px;
+}
+
+.section-head {
+  margin: 80px 0 32px;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid var(--rule);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+}
+.section-head:first-child { margin-top: 0; }
+.section-head h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 42px;
+  font-weight: 300;
+  font-variation-settings: "opsz" 144, "SOFT" 60;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.section-head h2 em {
+  font-style: italic;
+  color: var(--coral);
+}
+.section-head .desc {
+  font-size: 14px;
+  color: var(--ink-soft);
+  max-width: 42ch;
+  text-align: right;
+  font-style: italic;
+  font-family: 'Fraunces', serif;
+  font-variation-settings: "opsz" 14;
+}
+
+/* ─── CLUSTER GRID ─── */
+.cluster-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.cluster-grid.full > .cluster { grid-column: 1 / -1; }
+.cluster-grid > .cluster.span-2 { grid-column: 1 / -1; }
+
+/* ─── CLUSTER CARD ─── */
+.cluster {
+  background: var(--bg-card);
+  border-radius: 4px;
+  padding: 36px 40px 28px;
+  position: relative;
+  border: 0.5px solid var(--rule-soft);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.cluster:hover { border-color: var(--rule); }
+.cluster.consensus {
+  background: var(--bg-card-warm);
+  box-shadow: inset 3px 0 0 0 var(--coral);
+}
+.cluster.heritage {
+  box-shadow: inset 3px 0 0 0 var(--gold);
+}
+.cluster.outlier {
+  opacity: 0.55;
+  background: transparent;
+}
+.cluster.outlier:hover { opacity: 1; }
+
+.cluster-tier {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cluster.consensus .cluster-tier { color: var(--coral-deep); }
+.cluster.heritage .cluster-tier { color: var(--gold); }
+.cluster-tier .count {
+  color: var(--ink-mute);
+  font-variant-numeric: tabular-nums;
+}
+
+.cluster-theme {
+  font-family: 'Fraunces', serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-variation-settings: "opsz" 144, "SOFT" 60;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.cluster-theme em { font-style: italic; color: var(--coral); }
+
+.cluster-blurb {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 52ch;
+  font-weight: 300;
+}
+
+.cluster-rule {
+  height: 0.5px;
+  background: var(--rule-soft);
+  margin: 0 -40px 4px;
+}
+
+.name-list {
+  list-style: none;
+}
+.name-row {
+  display: grid;
+  grid-template-columns: 20px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 0.5px solid var(--rule-soft);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  position: relative;
+}
+.name-row:last-child { border-bottom: none; }
+.name-row:hover {
+  padding-left: 6px;
+}
+.name-row:hover .name-text {
+  color: var(--coral-deep);
+}
+
+.star {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  border: 0.5px solid var(--ink-mute);
+  background: transparent;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.name-row:hover .star {
+  border-color: var(--coral);
+}
+.name-row.active .star {
+  background: var(--coral);
+  border-color: var(--coral);
+  box-shadow: 0 0 0 4px var(--coral-soft);
+}
+.name-row.active .star::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: var(--bg-card-warm);
+  border-radius: 50%;
+}
+
+.name-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+  transition: color 0.2s;
+}
+.name-row.active .name-text {
+  font-weight: 500;
+  color: var(--coral-deep);
+}
+
+.name-by {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--ink-mute);
+  font-variation-settings: "opsz" 14;
+  white-space: nowrap;
+}
+.name-row.active .name-by { color: var(--coral); opacity: 0.8; }
+
+/* ─── BIG CONSENSUS FEATURED CARD ─── */
+.featured {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 48px 56px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+.featured::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 280px; height: 280px;
+  background: radial-gradient(circle at center, var(--coral) 0%, transparent 70%);
+  opacity: 0.18;
+  pointer-events: none;
+}
+.featured-tier {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 24px;
+}
+.featured-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: end;
+  margin-bottom: 36px;
+}
+.featured h2 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 300;
+  font-variation-settings: "opsz" 144, "SOFT" 80;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.featured h2 em {
+  font-style: italic;
+  color: var(--coral);
+}
+.featured-lede {
+  font-size: 17px;
+  color: rgba(244, 239, 230, 0.7);
+  font-weight: 300;
+  line-height: 1.55;
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-variation-settings: "opsz" 18;
+}
+
+/* ─── DRAWER ─── */
+.drawer-scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 31, 46, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.drawer-scrim.open { opacity: 1; pointer-events: auto; }
+
+.drawer {
+  position: fixed;
+  top: 0; right: 0;
+  width: 100%;
+  max-width: 440px;
+  height: 100vh;
+  background: var(--bg);
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  border-left: 0.5px solid var(--rule);
+}
+.drawer.open { transform: translateX(0); }
+.drawer-head {
+  padding: 28px 32px 20px;
+  border-bottom: 0.5px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.drawer-head h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 26px;
+  font-weight: 300;
+  font-variation-settings: "opsz" 144, "SOFT" 60;
+  letter-spacing: -0.02em;
+}
+.drawer-head h3 em { font-style: italic; color: var(--coral); }
+.drawer-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ink);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.drawer-close:hover { background: rgba(26, 31, 46, 0.06); }
+.drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 32px;
+}
+.drawer-empty {
+  padding: 80px 16px;
+  text-align: center;
+  color: var(--ink-mute);
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 16px;
+}
+.drawer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 0.5px solid var(--rule-soft);
+  gap: 12px;
+}
+.drawer-item:last-child { border-bottom: none; }
+.drawer-item-name {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--ink);
+}
+.drawer-item-by {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 12px;
+  color: var(--ink-mute);
+  display: block;
+  margin-top: 2px;
+}
+.drawer-item-remove {
+  background: none;
+  border: none;
+  color: var(--ink-mute);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.15s;
+}
+.drawer-item-remove:hover {
+  color: var(--coral);
+  background: var(--coral-soft);
+}
+.drawer-foot {
+  padding: 20px 32px 28px;
+  border-top: 0.5px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 13.5px;
+  font-weight: 500;
+  padding: 13px 20px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.01em;
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--bg);
+}
+.btn-primary:hover { background: var(--coral); transform: translateY(-1px); }
+.btn-ghost {
+  background: transparent;
+  border: 0.5px solid var(--rule);
+  color: var(--ink-soft);
+}
+.btn-ghost:hover { border-color: var(--ink); color: var(--ink); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ─── FOOTER ─── */
+.foot {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 64px 40px 80px;
+  border-top: 0.5px solid var(--rule);
+  text-align: center;
+  font-size: 12px;
+  color: var(--ink-mute);
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-variation-settings: "opsz" 14;
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.cluster, .featured {
+  animation: fadeUp 0.5s ease-out backwards;
+}
+.cluster:nth-child(1) { animation-delay: 0.04s; }
+.cluster:nth-child(2) { animation-delay: 0.08s; }
+.cluster:nth-child(3) { animation-delay: 0.12s; }
+.cluster:nth-child(4) { animation-delay: 0.16s; }
+.cluster:nth-child(5) { animation-delay: 0.20s; }
+.cluster:nth-child(n+6) { animation-delay: 0.24s; }
+
+/* ─── REVEAL TOGGLE ─── */
+.reveal-toggle {
+  background: transparent;
+  border: 0.5px solid var(--rule);
+  color: var(--ink-soft);
+  font-family: 'Plus Jakarta Sans';
+  font-size: 12.5px;
+  font-weight: 400;
+  padding: 9px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  letter-spacing: 0.01em;
+  margin-right: 10px;
+}
+.reveal-toggle:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.reveal-toggle svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+body.names-revealed .reveal-toggle {
+  background: var(--coral-soft);
+  border-color: var(--coral);
+  color: var(--coral-deep);
+}
+body.names-revealed .reveal-toggle .label::before { content: 'Hide submitters'; }
+body:not(.names-revealed) .reveal-toggle .label::before { content: 'Reveal submitters'; }
+
+/* Hide submitters by default */
+body:not(.names-revealed) .name-row {
+  grid-template-columns: 20px 1fr;
+}
+body:not(.names-revealed) .name-by,
+body:not(.names-revealed) .drawer-item-by {
+  display: none;
+}
+
+/* Blind mode banner */
+.blind-note {
+  display: none;
+  margin: 24px 0 -8px;
+  padding: 14px 20px;
+  background: var(--bg-card-warm);
+  border-left: 2px solid var(--gold);
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-variation-settings: "opsz" 14;
+  border-radius: 0 4px 4px 0;
+}
+body:not(.names-revealed) .blind-note { display: block; }
+
+/* ─── RANK OVERLAY ─── */
+.rank-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  overflow-y: auto;
+  background-image:
+    radial-gradient(at 5% 8%, rgba(233, 79, 61, 0.06) 0%, transparent 35%),
+    radial-gradient(at 95% 92%, rgba(184, 149, 74, 0.07) 0%, transparent 40%);
+}
+.rank-overlay.open { opacity: 1; pointer-events: auto; }
+
+.rank-container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 56px 40px 160px;
+}
+
+.rank-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.rank-kicker {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.rank-close {
+  background: transparent;
+  border: 0.5px solid var(--rule);
+  color: var(--ink);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1;
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rank-close:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.rank-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(56px, 8vw, 92px);
+  font-weight: 300;
+  font-variation-settings: "opsz" 144, "SOFT" 80;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+  margin-bottom: 20px;
+  color: var(--ink);
+}
+.rank-title em {
+  font-style: italic;
+  color: var(--coral);
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+}
+.rank-sub {
+  font-size: 17px;
+  color: var(--ink-soft);
+  max-width: 52ch;
+  margin-bottom: 56px;
+  line-height: 1.6;
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-variation-settings: "opsz" 18;
+  font-weight: 300;
+}
+.rank-sub strong { color: var(--ink); font-weight: 500; font-style: normal; font-family: 'Plus Jakarta Sans'; font-size: 16px; }
+
+.rank-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.rank-item {
+  display: grid;
+  grid-template-columns: 84px 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 28px;
+  background: var(--bg-card);
+  border: 0.5px solid var(--rule-soft);
+  border-radius: 6px;
+  cursor: grab;
+  transition: border-color 0.2s ease, transform 0.15s ease;
+}
+.rank-item:hover { border-color: var(--rule); }
+.rank-item:active { cursor: grabbing; }
+
+.rank-item.top-1 {
+  background: var(--bg-card-warm);
+  padding: 32px 32px;
+  box-shadow: inset 4px 0 0 0 var(--coral);
+  border-color: var(--rule);
+}
+.rank-item.top-2 {
+  padding: 26px 30px;
+  box-shadow: inset 3px 0 0 0 var(--gold);
+}
+.rank-item.top-3 {
+  padding: 24px 28px;
+  box-shadow: inset 3px 0 0 0 rgba(184, 149, 74, 0.45);
+}
+
+.rank-num {
+  font-family: 'Fraunces', serif;
+  font-size: 56px;
+  font-weight: 300;
+  font-variation-settings: "opsz" 144, "SOFT" 60;
+  letter-spacing: -0.04em;
+  color: var(--ink-mute);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.rank-item.top-1 .rank-num { font-size: 76px; color: var(--coral); font-weight: 400; font-style: italic; }
+.rank-item.top-2 .rank-num { font-size: 64px; color: var(--gold); }
+.rank-item.top-3 .rank-num { font-size: 58px; color: var(--gold); opacity: 0.75; }
+
+.rank-name {
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+.rank-item.top-1 .rank-name { font-size: 28px; font-weight: 500; font-family: 'Fraunces', serif; font-variation-settings: "opsz" 30, "SOFT" 60; letter-spacing: -0.02em; }
+.rank-item.top-2 .rank-name { font-size: 23px; font-weight: 500; }
+.rank-item.top-3 .rank-name { font-size: 21px; font-weight: 500; }
+
+.rank-by {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--ink-mute);
+  margin-top: 4px;
+  font-variation-settings: "opsz" 14;
+}
+body:not(.names-revealed) .rank-by { display: none; }
+
+.rank-handle {
+  color: var(--ink-mute);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: grab;
+  transition: background 0.15s;
+}
+.rank-handle:hover { background: rgba(26, 31, 46, 0.04); color: var(--ink); }
+.rank-handle span { width: 14px; height: 1px; background: currentColor; display: block; }
+
+.sortable-ghost { opacity: 0.35; }
+.sortable-chosen { transform: scale(1.005); }
+.sortable-drag { box-shadow: 0 24px 48px rgba(26, 31, 46, 0.18) !important; cursor: grabbing; }
+
+.rank-divider {
+  position: relative;
+  margin: 32px 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.rank-divider::before, .rank-divider::after {
+  content: '';
+  flex: 1;
+  height: 0.5px;
+  background: var(--rule);
+}
+.rank-divider span {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-mute);
+  font-weight: 500;
+}
+
+.rank-empty {
+  padding: 80px 16px;
+  text-align: center;
+  color: var(--ink-mute);
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 18px;
+  border: 0.5px dashed var(--rule);
+  border-radius: 6px;
+}
+
+.rank-actions {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  background: var(--bg-card);
+  padding: 8px;
+  border-radius: 999px;
+  border: 0.5px solid var(--rule);
+  box-shadow: 0 12px 36px rgba(26, 31, 46, 0.10);
+  z-index: 210;
+}
+.rank-actions .btn { padding: 11px 18px; font-size: 13px; }
+.rank-actions .btn-ghost { border: none; }
+
+/* ─── STAGE STEPPER ─── */
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.step {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--ink-mute);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.step.active { color: var(--coral); }
+.step.done { color: var(--ink); }
+.step .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 0.5px solid var(--rule);
+  transition: all 0.3s;
+}
+.step.active .dot {
+  background: var(--coral);
+  border-color: var(--coral);
+  box-shadow: 0 0 0 4px var(--coral-soft);
+}
+.step.done .dot {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.step-line {
+  flex: 0 0 24px;
+  height: 0.5px;
+  background: var(--rule);
+}
+.step-line.done { background: var(--ink); }
+
+/* ─── ROUND 2 CARDS ─── */
+.round2-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 12px 20px;
+  background: var(--bg-card-warm);
+  border-radius: 999px;
+  border: 0.5px solid var(--rule-soft);
+}
+.round2-meta-text {
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-variation-settings: "opsz" 14;
+}
+.round2-meta-count {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-variation-settings: "opsz" 24, "SOFT" 60;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.round2-meta-count em { font-style: italic; color: var(--coral); }
+
+.round2-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.round2-card {
+  background: var(--bg-card);
+  border: 0.5px solid var(--rule-soft);
+  border-radius: 6px;
+  padding: 22px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+.round2-card:hover {
+  border-color: var(--rule);
+  background: var(--bg-card-warm);
+}
+.round2-card.selected {
+  background: var(--bg-card-warm);
+  border-color: var(--coral);
+  box-shadow: inset 3px 0 0 0 var(--coral);
+}
+.round2-check {
+  width: 22px; height: 22px;
+  border: 0.5px solid var(--ink-mute);
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: all 0.2s;
+  position: relative;
+}
+.round2-card.selected .round2-check {
+  background: var(--coral);
+  border-color: var(--coral);
+}
+.round2-card.selected .round2-check::after {
+  content: '';
+  position: absolute;
+  left: 7px; top: 3px;
+  width: 6px; height: 11px;
+  border: 1.5px solid white;
+  border-top: 0; border-left: 0;
+  transform: rotate(45deg);
+}
+.round2-info {
+  flex: 1;
+  min-width: 0;
+}
+.round2-name {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+.round2-card.selected .round2-name { font-weight: 500; color: var(--coral-deep); }
+.round2-by {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 12px;
+  color: var(--ink-mute);
+  margin-top: 2px;
+  font-variation-settings: "opsz" 14;
+}
+body:not(.names-revealed) .round2-by { display: none; }
+.round2-prev-rank {
+  font-family: 'Fraunces', serif;
+  font-size: 13px;
+  color: var(--ink-mute);
+  font-style: italic;
+  flex-shrink: 0;
+  font-variation-settings: "opsz" 14;
+}
+
+/* ─── FINALIST CARDS (Stage 3) ─── */
+.finalist-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.finalist-card {
+  background: var(--bg-card);
+  border: 0.5px solid var(--rule);
+  border-radius: 8px;
+  padding: 36px 44px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  text-align: left;
+}
+.finalist-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--ink);
+  box-shadow: 0 12px 32px rgba(26, 31, 46, 0.08);
+}
+.finalist-card.selected {
+  background: var(--ink);
+  border-color: var(--ink);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 48px rgba(26, 31, 46, 0.18);
+}
+.finalist-name {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 400;
+  font-variation-settings: "opsz" 144, "SOFT" 60;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  color: var(--ink);
+  transition: color 0.25s;
+}
+.finalist-card.selected .finalist-name {
+  color: var(--bg);
+  font-style: italic;
+}
+.finalist-by {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--ink-mute);
+  margin-top: 10px;
+  font-variation-settings: "opsz" 14;
+  transition: color 0.25s;
+}
+.finalist-card.selected .finalist-by { color: rgba(244, 239, 230, 0.7); }
+body:not(.names-revealed) .finalist-by { display: none; }
+.finalist-mark {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card-warm);
+  color: var(--ink-mute);
+  font-size: 24px;
+  flex-shrink: 0;
+  transition: all 0.25s;
+  border: 0.5px solid var(--rule);
+}
+.finalist-card.selected .finalist-mark {
+  background: var(--coral);
+  border-color: var(--coral);
+  color: var(--bg);
+}
+.finalist-mark svg { width: 24px; height: 24px; }
+
+/* ─── WINNER REVEAL (Stage 4) ─── */
+.winner-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 220px);
+  text-align: center;
+  padding: 40px 24px;
+  position: relative;
+}
+.winner-ornament {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 32px;
+  color: var(--coral);
+  opacity: 0;
+  transform: scale(0.6);
+  animation: winnerBounce 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s forwards;
+}
+.winner-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 36px;
+  opacity: 0;
+  animation: winnerFade 0.6s ease 0.4s forwards;
+}
+.winner-name {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(56px, 13vw, 184px);
+  font-weight: 300;
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+  font-style: italic;
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+  color: var(--ink);
+  margin-bottom: 36px;
+  max-width: 14ch;
+  opacity: 0;
+  animation: winnerFade 0.9s ease 0.6s forwards;
+}
+.winner-name .accent { color: var(--coral); }
+.winner-by {
+  font-size: 18px;
+  color: var(--ink-soft);
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  margin-bottom: 14px;
+  font-variation-settings: "opsz" 20;
+  font-weight: 300;
+  opacity: 0;
+  animation: winnerFade 0.6s ease 0.95s forwards;
+}
+body:not(.names-revealed) .winner-by-block { display: none; }
+.winner-stats {
+  font-size: 12px;
+  color: var(--ink-mute);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 56px;
+  opacity: 0;
+  animation: winnerFade 0.6s ease 1.15s forwards;
+}
+.winner-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0;
+  animation: winnerFade 0.6s ease 1.4s forwards;
+}
+.winner-actions .btn { padding: 13px 22px; }
+
+@keyframes winnerBounce {
+  0% { opacity: 0; transform: scale(0.4) rotate(-12deg); }
+  70% { transform: scale(1.08) rotate(0); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+@keyframes winnerFade {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Decorative ornament around winner */
+.winner-stage::before, .winner-stage::after {
+  content: '';
+  position: absolute;
+  width: 240px; height: 1px;
+  background: var(--rule);
+  opacity: 0;
+  animation: winnerFade 0.8s ease 0.7s forwards;
+}
+.winner-stage::before { top: 50%; left: 0; transform: translateY(-20px); }
+.winner-stage::after { top: 50%; right: 0; transform: translateY(-20px); }
+@media (max-width: 900px) {
+  .winner-stage::before, .winner-stage::after { display: none; }
+}
+
+/* ─── NAME MODAL ─── */
+.name-modal {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 300;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  background-image:
+    radial-gradient(at 12% 18%, rgba(233, 79, 61, 0.07) 0%, transparent 40%),
+    radial-gradient(at 88% 82%, rgba(184, 149, 74, 0.08) 0%, transparent 45%);
+}
+.name-modal.open { opacity: 1; pointer-events: auto; }
+.name-modal-content {
+  max-width: 520px;
+  text-align: center;
+}
+.name-input {
+  width: 100%;
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-variation-settings: "opsz" 36, "SOFT" 100;
+  font-size: 28px;
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid var(--ink);
+  padding: 16px 0;
+  margin: 0 0 28px;
+  text-align: center;
+  color: var(--ink);
+  outline: none;
+  letter-spacing: -0.01em;
+  transition: border-color 0.2s;
+}
+.name-input::placeholder { color: var(--ink-mute); }
+.name-input:focus { border-color: var(--coral); }
+.name-input.error { border-color: var(--coral); animation: shake 0.4s; }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+
+/* ─── USER BUTTON ─── */
+.user-btn {
+  background: transparent;
+  border: 0.5px solid var(--rule);
+  color: var(--ink-soft);
+  font-family: 'Plus Jakarta Sans';
+  font-size: 12.5px;
+  font-weight: 400;
+  padding: 9px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+.user-btn:hover { border-color: var(--ink); color: var(--ink); }
+.user-btn .dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--coral);
+}
+.user-btn strong { font-weight: 500; }
+
+/* ─── REFRESH BUTTON ─── */
+.refresh-btn {
+  background: transparent;
+  border: 0.5px solid var(--rule);
+  color: var(--ink-soft);
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+.refresh-btn:hover { border-color: var(--ink); color: var(--ink); transform: rotate(180deg); }
+.refresh-btn:active { transform: rotate(360deg); }
+.refresh-btn svg { width: 14px; height: 14px; }
+
+/* ─── VOTE BADGE ─── */
+.name-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.vote-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--coral);
+  font-variant-numeric: tabular-nums;
+  transition: opacity 0.2s;
+  letter-spacing: -0.01em;
+}
+.vote-badge.zero {
+  opacity: 0.25;
+  color: var(--ink-mute);
+}
+.vote-badge svg { width: 11px; height: 11px; flex-shrink: 0; }
+
+/* Hide name-by/vote-badge sensibly when blind */
+body:not(.names-revealed) .name-meta .name-by { display: none; }
+
+/* Update name-row layout for the new structure */
+.name-row {
+  grid-template-columns: 20px 1fr auto !important;
+}
+body:not(.names-revealed) .name-row {
+  grid-template-columns: 20px 1fr auto !important;
+}
+
+/* ─── RESULTS BUTTON & PAGE ─── */
+.results-btn {
+  background: transparent;
+  border: 0.5px solid var(--rule);
+  color: var(--ink-soft);
+  font-family: 'Plus Jakarta Sans';
+  font-size: 12.5px;
+  font-weight: 400;
+  padding: 9px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: all 0.2s ease;
+}
+.results-btn:hover { border-color: var(--ink); color: var(--ink); }
+.results-btn svg { width: 14px; height: 14px; }
+
+.results-stats {
+  display: flex;
+  gap: 56px;
+  margin-bottom: 48px;
+  padding-bottom: 36px;
+  border-bottom: 0.5px solid var(--rule);
+  flex-wrap: wrap;
+}
+.results-stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: 52px;
+  font-weight: 300;
+  font-variation-settings: "opsz" 144, "SOFT" 60;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--ink);
+}
+.results-stat-num em { font-style: italic; color: var(--coral); }
+.results-stat-label {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  margin-top: 10px;
+  font-weight: 500;
+}
+.results-voters {
+  font-size: 12.5px;
+  color: var(--ink-mute);
+  margin-top: 6px;
+  line-height: 1.55;
+}
+.results-voters strong {
+  color: var(--ink-soft);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.results-count-big {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  color: var(--coral);
+  font-weight: 600;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+/* ─── LIVE STATUS PILL ─── */
+.live-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+  padding: 0 6px;
+  white-space: nowrap;
+}
+.live-pill .led {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--ink-mute);
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+.live-pill.on { color: #2E7D4F; }
+.live-pill.on .led {
+  background: #2E9E5B;
+  animation: livePulse 2.2s ease-in-out infinite;
+}
+@keyframes livePulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(46, 158, 91, 0.16); }
+  50% { box-shadow: 0 0 0 6px rgba(46, 158, 91, 0.04); }
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+  .hero { padding: 48px 24px 40px; }
+  .meta-row { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .cluster-grid { grid-template-columns: 1fr; }
+  .featured { padding: 32px 28px; }
+  .featured-head { grid-template-columns: 1fr; gap: 16px; }
+  .main { padding: 32px 24px 200px; }
+  .topbar { padding: 14px 20px; }
+  .rail { padding: 12px 20px; }
+  .section-head { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .section-head .desc { text-align: left; }
+  .cluster { padding: 28px 24px 20px; }
+  .cluster-rule { margin: 0 -24px 4px; }
+  .name-by { font-size: 12px; }
+  .rank-container { padding: 32px 20px 140px; }
+  .rank-topbar { margin-bottom: 40px; }
+  .rank-item { grid-template-columns: 60px 1fr 32px; gap: 14px; padding: 16px 18px; }
+  .rank-item.top-1 { padding: 22px 20px; }
+  .rank-num { font-size: 40px; }
+  .rank-item.top-1 .rank-num { font-size: 52px; }
+  .rank-item.top-2 .rank-num { font-size: 46px; }
+  .rank-item.top-3 .rank-num { font-size: 42px; }
+  .rank-name { font-size: 16px; }
+  .rank-item.top-1 .rank-name { font-size: 22px; }
+  .rank-item.top-2 .rank-name { font-size: 19px; }
+  .rank-actions { flex-wrap: wrap; max-width: calc(100% - 24px); }
+}
+
+.toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: var(--ink);
+  color: var(--bg);
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 200;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow);
+}
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark"><span></span></div>
+    <div class="brand-text"><strong>F3 Fort Lauderdale</strong>· Naming Contest</div>
+  </div>
+  <div style="display: flex; align-items: center; gap: 8px;">
+  <button class="reveal-toggle" onclick="toggleReveal()" aria-label="Toggle submitter visibility">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/>
+      <circle cx="12" cy="12" r="3"/>
+    </svg>
+    <span class="label"></span>
+  </button>
+  <span class="live-pill" id="live-pill" title="Realtime connection status"><span class="led"></span><span class="live-text">Connecting…</span></span>
+  <button class="user-btn" id="user-btn" onclick="changeName()" title="Sign in">
+    <span class="dot"></span>
+    <span>Sign in to vote</span>
+  </button>
+  <button class="refresh-btn" onclick="refreshVotes()" title="Refresh votes" aria-label="Refresh">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12a9 9 0 1 1-3-6.7"/>
+      <path d="M21 4v5h-5"/>
+    </svg>
+  </button>
+  <button class="results-btn" onclick="openResults()" title="See results">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="7"/><rect x="12" y="6" width="3" height="11"/><rect x="17" y="13" width="3" height="4"/>
+    </svg>
+    <span>Results</span>
+  </button>
+  <button class="shortlist-btn" onclick="toggleDrawer()">
+    <span class="dot"></span>
+    <span class="num" id="count">0</span>
+    <span>my votes</span>
+  </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="kicker">A naming dossier <span class="sep">·</span> May 2026 <span class="sep">·</span> Internal</div>
+  <h1 class="display"><em>A name</em><br>for the water.</h1>
+  <p class="lede">Thirty-five employees submitted <strong>266 ideas</strong> across two weeks. Below, every name grouped by concept so the patterns rise to the surface. Click any name to vote — <strong>votes are shared with everyone viewing this page</strong> so the team can narrow together.</p>
+  <div class="meta-row">
+    <div class="meta-cell">
+      <div class="meta-num">266</div>
+      <div class="meta-label">Names submitted</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-num">35</div>
+      <div class="meta-label">Employees</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-num"><em>14</em></div>
+      <div class="meta-label">Consensus picks</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-num"><em>26</em></div>
+      <div class="meta-label">Concept clusters</div>
+    </div>
+  </div>
+  <div class="blind-note">Submitters hidden so names can be judged on their own merits. Vote totals from the team are visible. Toggle <strong>Reveal submitters</strong> in the top bar after final voting closes.</div>
+</section>
+
+<nav class="rail">
+  <div class="rail-inner">
+    <span class="rail-label">Browse</span>
+    <button class="chip active" data-filter="all">All</button>
+    <button class="chip" data-filter="consensus">Consensus picks</button>
+    <button class="chip" data-filter="heritage">FTL heritage</button>
+    <button class="chip" data-filter="distinct">Distinctive</button>
+    <button class="chip" data-filter="standard">Standard themes</button>
+    <button class="chip" data-filter="outlier">Outliers</button>
+    <div class="rail-search">
+      <input class="search" type="text" id="search" placeholder="Search names…">
+    </div>
+  </div>
+</nav>
+
+<main class="main">
+
+<div class="featured" data-tier="consensus" id="featured-card">
+  <div class="featured-tier">★ Where the room agreed</div>
+  <div class="featured-head">
+    <h2>Fourteen concepts<br>with <em>multiple<br>independent</em> hits.</h2>
+    <p class="featured-lede">When two or more employees land on the same idea without coordinating, that's the closest thing to organic brand resonance you'll get. Sorted by signal strength.</p>
+  </div>
+</div>
+
+<div id="clusters-consensus" class="cluster-grid"></div>
+
+<div class="section-head">
+  <h2><em>Heritage</em></h2>
+  <p class="desc">Real Fort Lauderdale landmarks, streets, and history. Hardest to imitate, lowest trademark friction, highest local resonance.</p>
+</div>
+<div id="clusters-heritage" class="cluster-grid full"></div>
+
+<div class="section-head">
+  <h2>Distinctive concepts</h2>
+  <p class="desc">Singular ideas worth a serious second look. Some are one-submitter picks; all are ownable.</p>
+</div>
+<div id="clusters-distinct" class="cluster-grid"></div>
+
+<div class="section-head">
+  <h2>Standard themes</h2>
+  <p class="desc">The reliable categories. Many beautiful options here, but harder to differentiate.</p>
+</div>
+<div id="clusters-standard" class="cluster-grid"></div>
+
+<div class="section-head">
+  <h2>Outliers</h2>
+  <p class="desc">Mountain, lake, or generic names that don't fit a Fort Lauderdale property. Included for completeness.</p>
+</div>
+<div id="clusters-outlier" class="cluster-grid"></div>
+
+</main>
+
+<footer class="foot">
+  Compiled from the Microsoft Forms export, May 19–22, 2026. <br>
+  Click any name to shortlist. Your shortlist saves to this browser.
+</footer>
+
+<div class="drawer-scrim" id="scrim" onclick="toggleDrawer()"></div>
+<aside class="drawer" id="drawer">
+  <header class="drawer-head">
+    <h3>Your <em>shortlist</em></h3>
+    <button class="drawer-close" onclick="toggleDrawer()" aria-label="Close">×</button>
+  </header>
+  <div class="drawer-body" id="drawer-body"></div>
+  <footer class="drawer-foot">
+    <button class="btn btn-primary" id="rank-btn" onclick="openStageView()">Rank shortlist →</button>
+    <div style="display: flex; gap: 8px;">
+      <button class="btn btn-ghost" id="copy-btn" onclick="copyShortlist()" style="flex: 1;">Copy list</button>
+      <button class="btn btn-ghost" id="clear-btn" onclick="clearShortlist()" style="flex: 1;">Clear all</button>
+    </div>
+  </footer>
+</aside>
+
+<div class="rank-overlay" id="stage-overlay">
+  <div class="rank-container">
+    <div class="rank-topbar">
+      <span class="rank-kicker" id="stage-kicker">Step 02 <span style="margin: 0 10px; color: var(--ink-mute);">·</span> Ranking</span>
+      <button class="rank-close" onclick="closeStageView()" aria-label="Close">×</button>
+    </div>
+    <div class="stepper" id="stepper">
+      <div class="step" data-stage="1"><div class="dot"></div><span>Rank</span></div>
+      <div class="step-line"></div>
+      <div class="step" data-stage="2"><div class="dot"></div><span>Finalists</span></div>
+      <div class="step-line"></div>
+      <div class="step" data-stage="3"><div class="dot"></div><span>Confirm</span></div>
+      <div class="step-line"></div>
+      <div class="step" data-stage="4"><div class="dot"></div><span>Winner</span></div>
+    </div>
+    <div id="stage-content"></div>
+  </div>
+  <div class="rank-actions" id="stage-actions"></div>
+</div>
+
+<div class="rank-overlay" id="results-overlay">
+  <div class="rank-container">
+    <div class="rank-topbar">
+      <span class="rank-kicker">Round 01 <span style="margin: 0 10px; color: var(--ink-mute);">·</span> Live results</span>
+      <button class="rank-close" onclick="closeResults()" aria-label="Close">×</button>
+    </div>
+    <h2 class="rank-title">What the <em>team</em> voted for.</h2>
+    <p class="rank-sub">Every name that received at least one vote, ranked by total. <strong>Top three get podium treatment.</strong> Pull the leaders into the narrowing flow when you're ready.</p>
+    <div class="results-stats" id="results-stats"></div>
+    <ul class="rank-list" id="results-list"></ul>
+  </div>
+  <div class="rank-actions" id="results-actions"></div>
+</div>
+
+<div class="name-modal" id="name-modal">
+  <div class="name-modal-content">
+    <div class="kicker">A naming dossier <span class="sep">·</span> 2026</div>
+    <h2 class="rank-title" style="margin-bottom: 20px;"><em>Sign in</em><br>to vote.</h2>
+    <p class="rank-sub" style="margin-bottom: 32px;">Your name is recorded with each vote so the team can see who picked what. Submitters of names stay hidden until everyone's finished voting.</p>
+    <input type="text" class="name-input" id="name-input" placeholder="Your name" autocomplete="off" maxlength="40" onkeydown="if(event.key==='Enter') saveName()">
+    <button class="btn btn-primary" onclick="saveName()" style="padding: 14px 32px; font-size: 14px;">Start voting →</button>
+    <p style="font-size: 11.5px; color: var(--ink-mute); margin-top: 36px; letter-spacing: 0.08em;">YOUR VOTES ARE SHARED WITH EVERYONE VIEWING THIS PAGE.</p>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
+
+<script>
+const clusters = [
+  // ─── CONSENSUS (multi-employee independent matches) ───
+  { id: "vault", theme: "The Vault", blurb: "Five employees converged. Premium, secure, on-message for a dry-storage building.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 5 employees", items: [
+    ["The Vault at Lauderdale", "Ryann Jean"],
+    ["The Atlantic Vault", "Kyle Monteton"],
+    ["Vault Marina Fort Lauderdale", "Taylor Fitzsimmons"],
+    ["The Yacht Vault", "Alex Horak"],
+    ["The Intracoastal Yacht Vault", "Christine Larsen"]
+  ]},
+  { id: "stack", theme: "The Stack", blurb: "Six employees, seven names. The most literal description of a dry stack you can build a brand on.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 6 employees", items: [
+    ["The Stack", "Kelly Robinson"],
+    ["Stacked", "Terri Tesdall"],
+    ["LauderStack", "Christine Larsen"],
+    ["The Coastal Stack", "Christine Larsen"],
+    ["Skystack Marina", "Alex Horak"],
+    ["Stacked Island Marina", "Maya Burkes"],
+    ["Superior Dry Stack Marina", "David Wilson"]
+  ]},
+  { id: "stranahan", theme: "Stranahan", blurb: "Three employees, six names. Fort Lauderdale's founding family — heritage and consensus in the same word.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 3 employees", items: [
+    ["The Stranahan", "Adam Harrington"],
+    ["Stranahan 17", "Adam Harrington"],
+    ["Stranahan Landing", "Adam Harrington"],
+    ["The Stranahan Club", "Adam Harrington"],
+    ["Stranahan Straits Marina", "Christopher Hendrickson"],
+    ["The 1901 Stranahan Marina", "Vickie Sorrell"]
+  ]},
+  { id: "portnum", theme: "Port + Number", blurb: "Five employees independently landed on the same structural idea: 'Port' or 'Marina' paired with a number — 16, 17, 26. Numbers reference local geography and zip codes.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 5 employees", items: [
+    ["PORT16", "Kelly Robinson"],
+    ["Marina 16", "Jill A Bell"],
+    ["16th Port Marina", "Jill A Bell"],
+    ["16th Port Yacht Club", "Jill A Bell"],
+    ["Port Atlantic on the 16th", "Jill A Bell"],
+    ["Port 17 Marina", "Heather Perry"],
+    ["FTL 17 Marina", "Heather Perry"],
+    ["Lauderdale 26 Marina", "Gretchen Henderson"],
+    ["26 North Marina", "Rex Ankrom"]
+  ]},
+  { id: "reserve", theme: "Reserve", blurb: "Three employees reached for the same restrained, club-feel word. Often paired with other concepts.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 3 employees", items: [
+    ["Bluewater Reserve", "Alex Horak"],
+    ["The Reserve Marina", "Heather Perry"],
+    ["The Reserve at Las Olas", "Heather Perry"],
+    ["FTL Reserve", "Heather Perry"],
+    ["FTL Bluewater Reserve", "Heather Perry"],
+    ["Captain's Reserve", "Fran Bridges"]
+  ]},
+  { id: "anchor", theme: "Anchor", blurb: "Three employees, three takes on the most fundamental nautical word.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 3 employees", items: [
+    ["Anchor Point", "Summer Mattingly"],
+    ["Anchor Excellence", "Fran Bridges"],
+    ["Anchors Up Marina", "John Zona"]
+  ]},
+  { id: "apex", theme: "Apex / Elevate", blurb: "Four employees in the premium-positioning vocabulary. Apex was picked three times verbatim.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 4 employees", items: [
+    ["Apex", "Marieke van Peer"],
+    ["ApEx Marina", "Kevin Munz"],
+    ["Apex Marina Fort Lauderdale", "Alex Horak"],
+    ["Elevate Marina", "Alex Horak"],
+    ["F3 Elevate", "Ryann Jean"],
+    ["Elevate Marina Club", "Heather Perry"],
+    ["Elevate FTL Marina", "Heather Perry"],
+    ["Ascent Marina", "Kevin Munz"],
+    ["Sovereign Marina", "Alex Horak"],
+    ["Nexus Marina", "Alex Horak"],
+    ["Stellar Marina", "Savannah Holt"],
+    ["Legendary Marina", "Savannah Holt"],
+    ["Prestige Marina", "Kevin Munz"],
+    ["Regency Marina", "Kevin Munz"],
+    ["Southern Peak Marina", "Rex Ankrom"],
+    ["South Premier Marina", "Gretchen Henderson"],
+    ["Elite Performance Marina", "David Wilson"],
+    ["Harbor Front Elevated", "Fran Bridges"]
+  ]},
+  { id: "launchpoint", theme: "Launch Point", blurb: "Three employees independently landed on this compound noun.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 3 employees", items: [
+    ["Launch Point Fort Lauderdale", "Kyle Monteton"],
+    ["Launchpoint Marina", "Alex Horak"],
+    ["The Launch", "Anonymous"]
+  ]},
+  { id: "lasolas", theme: "Las Olas", blurb: "Two employees reached for Fort Lauderdale's most iconic street.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 2 employees", items: [
+    ["Las Olas Marina", "Vickie Sorrell"],
+    ["Las Olas Harbor Club", "Heather Perry"]
+  ]},
+  { id: "harborone", theme: "Harbor One", blurb: "Two employees independently arrived at this clean compound.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 2 employees", items: [
+    ["Harbor One Marina", "Alex Horak"],
+    ["Harbor One", "Heather Perry"],
+    ["FTL Harbor One", "Heather Perry"]
+  ]},
+  { id: "goldcoast", theme: "Gold Coast", blurb: "Two employees, no coordination. Florida's Gold Coast is the actual regional name for the southeast coast.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 2 employees", items: [
+    ["Gold Coast Marina", "Kevin Munz"],
+    ["Gold Coast Marina", "Gretchen Henderson"]
+  ]},
+  { id: "tidewell", theme: "Tidewell", blurb: "Two employees typed the same invented word with no overlap. Cleanest exact match in the dataset.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 2 employees", items: [
+    ["Tidewell", "Kira Pyles"],
+    ["Tidewell Marina", "Zachary King"]
+  ]},
+  { id: "royal", theme: "Royal", blurb: "Two employees reached for the same regal register.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 2 employees", items: [
+    ["Royal Palm Marina", "Kevin Munz"],
+    ["Royal Port Marina", "Emily Mustard"],
+    ["Royal Yacht Marina", "Emily Mustard"]
+  ]},
+  { id: "venice", theme: "Venice of America", blurb: "Fort Lauderdale's actual historical nickname. Two employees, two takes.", tier: "consensus", section: "consensus", tierLabel: "Independent match · 2 employees", items: [
+    ["Venice of America Marina", "Vickie Sorrell"],
+    ["F|3 America's Venice", "Bennie McTier"]
+  ]},
+
+  // ─── HERITAGE (FTL-specific local references) ───
+  { id: "heritage", theme: "Fort Lauderdale heritage", blurb: "Real local landmarks, street names, tribes, and historical references. Hardest to imitate, lowest trademark friction.", tier: "heritage", section: "heritage", tierLabel: "Heritage · 8 employees", items: [
+    ["Cordova Sixteen", "Adam Harrington"],
+    ["Cordova Yacht Club", "Adam Harrington"],
+    ["Rio Vista Marina", "Kelly Robinson"],
+    ["Lago Mar Marina", "Kelly Robinson"],
+    ["Seminole Harbor Marina", "Kelly Robinson"],
+    ["Harbordale Marina", "Maya Burkes"],
+    ["Tequesta Marina", "Rex Ankrom"],
+    ["Mucahatchee Marina", "Rex Ankrom"],
+    ["Grand Hatchee Marina", "Rex Ankrom"],
+    ["South/East Hatchee Marina", "Rex Ankrom"],
+    ["The Cranehouse Fort Lauderdale", "Adam Harrington"],
+    ["The Crane Club", "Adam Harrington"],
+    ["The Strand", "Adam Harrington"],
+    ["Port Everglade Marina", "Brooke Rowlett"],
+    ["Marina to the Everglades", "Vickie Sorrell"],
+    ["The Broward County Marina", "Vickie Sorrell"],
+    ["The Strip Marina", "Vickie Sorrell"]
+  ]},
+
+  // ─── DISTINCTIVE ───
+  { id: "haus", theme: "Haus", blurb: "German for house. Modern, boutique, distinctive in a category full of \"marinas.\"", tier: "distinct", section: "distinct", tierLabel: "Distinctive", items: [
+    ["Harbor Haus", "Ryann Jean"],
+    ["DockHaus", "Ryann Jean"],
+    ["WakeHaus Lauderdale", "Christine Larsen"]
+  ]},
+  { id: "fseries", theme: "F-series", blurb: "Extends the existing F3 Marina brand. Bennie's F|3 with the pipe character is a typographic flourish, Nicholas's FTL = Faster Than Light is a play on the airport code.", tier: "distinct", section: "distinct", tierLabel: "Distinctive", items: [
+    ["F4", "Adam Harrington"],
+    ["F3 Current", "Ryann Jean"],
+    ["F3 Elevate", "Ryann Jean"],
+    ["F|3 Laudy Daudy", "Bennie McTier"],
+    ["F|3 America's Venice", "Bennie McTier"],
+    ["FTL Marina: Faster Than Light", "Nicholas Thore"]
+  ]},
+  { id: "vela", theme: "VELA", blurb: "Spanish for sail. Single submitter, complete word, ownable as a brand.", tier: "distinct", section: "distinct", tierLabel: "Distinctive", items: [
+    ["VELA Ft Lauderdale", "Christine Larsen"],
+    ["VELA Harbor", "Christine Larsen"]
+  ]},
+  { id: "mythic", theme: "Single-word brands", blurb: "Bold one-word brands. Hardest category to get right and the most memorable when you do.", tier: "distinct", section: "distinct", tierLabel: "Distinctive", items: [
+    ["Talos Marina", "Gretchen Henderson"],
+    ["Rosetta Marina", "Nour Abouzeid"],
+    ["NAUTIQ Marina", "Heather Perry"],
+    ["ONYX Marina Fort Lauderdale", "Heather Perry"],
+    ["AXIS Waterfront Club", "Heather Perry"],
+    ["Axis Marina Club", "Heather Perry"],
+    ["FTL Axis Marina", "Heather Perry"],
+    ["Luxeport", "Heather Perry"],
+    ["Stowaway Marina", "Taylor Fitzsimmons"],
+    ["LIFT FTL", "Adam Harrington"],
+    ["Portafino Marina USA", "John Rigby"],
+    ["Meridian Marina", "Rex Ankrom"],
+    ["Venetian Marina", "Rex Ankrom"]
+  ]},
+  { id: "standalones", theme: "Distinctive standalones", blurb: "One-of-a-kind ideas that didn't cluster but earn their own consideration.", tier: "distinct", section: "distinct", tierLabel: "Distinctive", items: [
+    ["The Barn", "Anonymous"],
+    ["Sky High & Dry Marina", "Anonymous"],
+    ["Skies the Limit", "Terri Tesdall"],
+    ["Drew's Boat Vending Machine", "Adam Harrington"],
+    ["The Bella Luna Landings", "Robert McPhillips"],
+    ["The Bella Tower Marina", "Robert McPhillips"],
+    ["The NauticRise Marina", "Robert McPhillips"],
+    ["The Seaborn Cradle", "Robert McPhillips"],
+    ["The Cove and Current", "Robert McPhillips"],
+    ["Glasswater Marina", "Kira Pyles"],
+    ["Marlin Bay Marina", "Zachary King"],
+    ["Smoke Water Marina", "Emily Mustard"],
+    ["Fools Gold Marina", "Savannah Holt"],
+    ["Escapade Marina", "Savannah Holt"],
+    ["Castaway Marina", "Savannah Holt"],
+    ["Mockingbird Marina", "Brooke Rowlett"],
+    ["Honeysuckle Marina", "Matthew Hindman"],
+    ["Zen and Finn Marina", "Matthew Hindman"],
+    ["Leeway Landing", "Christopher Hendrickson"],
+    ["Promises Kept Marina", "David Wilson"],
+    ["Dockside", "Vickie Sorrell"],
+    ["Wahoo Marina", "John Zona"],
+    ["Lucky's Marina", "Benita Zona"],
+    ["Lucky's at Lauderdale", "Benita Zona"],
+    ["Fly High Marina", "Benita Zona"],
+    ["Skippys", "Benita Zona"],
+    ["Salt Water Gateway", "Fran Bridges"],
+    ["Gulf Stream Bound", "Fran Bridges"],
+    ["Salty Tides", "Fran Bridges"],
+    ["Legacy on the Water", "Fran Bridges"],
+    ["Starboard Marina", "Savannah Holt"],
+    ["Coastal Yacht Club", "Jill A Bell"],
+    ["Port Atlantic", "Jill A Bell"]
+  ]},
+
+  // ─── STANDARD THEMES ───
+  { id: "sunset", theme: "Sunset & soft coastal", blurb: "Resort-romance register. Reads more Gulf-Coast beach hotel than Lauderdale yacht facility.", tier: "standard", section: "standard", tierLabel: "Standard theme", items: [
+    ["Sunset Cove", "Summer Mattingly"],
+    ["Sunset Shores", "Summer Mattingly"],
+    ["Seaside Escape", "Summer Mattingly"],
+    ["Sandy Shores", "Summer Mattingly"],
+    ["Coral Coast", "Summer Mattingly"],
+    ["Paradise Bay Marina", "Gretchen Henderson"],
+    ["Palm Bay Marina", "Julie Gattis"],
+    ["Sky Crest Marina", "Julie Gattis"]
+  ]},
+  { id: "lauderdale", theme: "Lauderdale / Fort generic", blurb: "Names anchored on the city name itself without further specificity.", tier: "standard", section: "standard", tierLabel: "Standard theme", items: [
+    ["Port Lauderdale", "Kelly Robinson"],
+    ["Lauderdale Cove Marina", "Brooke Rowlett"],
+    ["Lauderdale Cove", "Benita Zona"],
+    ["Lauderdale Harbours Marina", "Christopher Hendrickson"],
+    ["LauderSun Marina", "Christine Larsen"],
+    ["Lauderdale Quality Marina", "David Wilson"],
+    ["The Fort at Lauderdale Marina", "David Wilson"],
+    ["Southern Marina at the Fort", "David Wilson"],
+    ["The Fort Marina", "Kenneth Williams"],
+    ["Fort Lauderdale Yacht Club", "Alex Horak"],
+    ["Ft. Lauderdale Harbor", "Summer Mattingly"]
+  ]},
+  { id: "harbor", theme: "Harbor / Cove / Haven", blurb: "Classic protected-water imagery.", tier: "standard", section: "standard", tierLabel: "Standard theme", items: [
+    ["Azure Cove Marina", "Ryann Jean"],
+    ["Azure Harbor", "Ryann Jean"],
+    ["Azure Point Marina", "Ryann Jean"],
+    ["Havenpoint Marina", "Ryann Jean"],
+    ["Harbor Haven Marina", "Brooke Rowlett"],
+    ["Harbortown Marina", "Zachary King"],
+    ["Harborline Marina", "Kira Pyles"],
+    ["Harbor Social", "Kira Pyles"],
+    ["The Harbor Collective", "Heather Perry"],
+    ["Cape Harbor Marina", "Nour Abouzeid"],
+    ["Secret Cove Marina", "Christopher Hendrickson"],
+    ["Moonwake Harbor", "Kira Pyles"],
+    ["Bayshore Marina", "Kelly Robinson"],
+    ["Canal Pointe Marina", "Maya Burkes"],
+    ["The Fortune Harbor", "Robert McPhillips"],
+    ["The Harbor Safe", "Robert McPhillips"],
+    ["Harboring Excellence", "Fran Bridges"],
+    ["FTL HarborX", "Heather Perry"]
+  ]},
+  { id: "wake", theme: "Wake / Wave / Current", blurb: "Water in motion.", tier: "standard", section: "standard", tierLabel: "Standard theme", items: [
+    ["Wakepoint Marina", "Ryann Jean"],
+    ["F3 Current", "Ryann Jean"],
+    ["South Current Marina", "Ryann Jean"],
+    ["Grand Wake Marina", "Kira Pyles"],
+    ["Wake Society Marina", "Kira Pyles"],
+    ["The Current Club", "Kira Pyles"],
+    ["Current Collective", "Kira Pyles"],
+    ["Fort Wave Marina", "Kenneth Williams"],
+    ["New Wave Marina", "Kenneth Williams"],
+    ["Blue Drift Marina", "Christine Larsen"],
+    ["Gold Tide Marina", "Emily Mustard"]
+  ]},
+  { id: "sun", theme: "Sun / Bright", blurb: "Florida sunshine angle.", tier: "standard", section: "standard", tierLabel: "Standard theme", items: [
+    ["Sunline Marina", "Christine Larsen"],
+    ["Brightwater Marina", "Christine Larsen"],
+    ["SunSafe Marina", "Taylor Fitzsimmons"],
+    ["Blue Skies Marina", "Maya Burkes"],
+    ["Sun's Eye Marina", "Nour Abouzeid"]
+  ]},
+  { id: "blue", theme: "Blue / Azure", blurb: "Color-anchored.", tier: "standard", section: "standard", tierLabel: "Standard theme", items: [
+    ["Bimini Blue Marina", "Kyle Monteton"],
+    ["Bluewater Boatel", "Taylor Fitzsimmons"],
+    ["Deep Blue Marina", "David Wilson"],
+    ["Blue Herron Marina", "Brooke Rowlett"],
+    ["The BlueWater", "Robert McPhillips"]
+  ]},
+  { id: "atlantic", theme: "Atlantic / Coastal", blurb: "Ocean-side positioning at a broader scale.", tier: "standard", section: "standard", tierLabel: "Standard theme", items: [
+    ["Atlantic Passage Marina", "Kyle Monteton"],
+    ["Atlantic's Performance Marina", "David Wilson"],
+    ["Gulf Stream Performance Marina", "David Wilson"],
+    ["Ocean Club Marina", "Kevin Munz"],
+    ["Ocean Lux Marina", "Gretchen Henderson"],
+    ["Boat Coast Marina", "Kira Pyles"],
+    ["Atlantic Point", "Heather Perry"]
+  ]},
+  { id: "luxstorage", theme: "Luxury storage", blurb: "Names leading explicitly with the upscale-storage value prop.", tier: "standard", section: "standard", tierLabel: "Standard theme", items: [
+    ["Luxury Harbor Storage & More", "Emily Mustard"],
+    ["Harbor Vista Luxury Storage & More", "Emily Mustard"],
+    ["Luxury Latitude", "Fran Bridges"],
+    ["Luxury on the Water", "Fran Bridges"],
+    ["Tech Five (Drystack) Marina", "Rex Ankrom"],
+    ["Coastal Capital Docks", "Robert McPhillips"]
+  ]},
+  { id: "iron", theme: "Iron / Steel", blurb: "Industrial-modern angle. Small but coherent direction.", tier: "standard", section: "standard", tierLabel: "Standard theme", items: [
+    ["Steel Island Marina", "Maya Burkes"],
+    ["Iron Pier Marina", "Maya Burkes"],
+    ["Iron Isle Marina", "Maya Burkes"]
+  ]},
+  { id: "sail", theme: "Sail & safety", blurb: "Safety-and-sailing wordplay.", tier: "standard", section: "standard", tierLabel: "Standard theme", items: [
+    ["Safe Dock Marina", "Kenneth Williams"],
+    ["Sail Safe Marina", "Kenneth Williams"],
+    ["Sure Sail Marina", "Kenneth Williams"],
+    ["Up-sail Marina", "Kenneth Williams"],
+    ["The Southern SS (safe and secure)", "Robert McPhillips"]
+  ]},
+
+  // ─── OUTLIERS ───
+  { id: "outlier", theme: "Off-target & outliers", blurb: "Mountain, lake, or generic names. Submitted in good faith but don't fit a Fort Lauderdale property.", tier: "outlier", section: "outlier", tierLabel: "Outliers", items: [
+    ["Hollister Mountain Marina", "Matthew Hindman"],
+    ["Coeur d'Alene Mountain Marina", "Matthew Hindman"],
+    ["The Ponderosa Marina", "Matthew Hindman"],
+    ["The Bitterroot Bay Marina", "Matthew Hindman"],
+    ["The Ironwood Marina", "Matthew Hindman"],
+    ["The Lonely Pine Marina", "Matthew Hindman"],
+    ["Lake Denuf Marina", "Matthew Hindman"],
+    ["Lake City Marina", "Matthew Hindman"],
+    ["Coopers Bay Marina", "Matthew Hindman"],
+    ["The 38th Parallel Marina", "Matthew Hindman"],
+    ["H38 Marina", "Matthew Hindman"],
+    ["Legacy Bay Marina", "Matthew Hindman"],
+    ["Emerald Marina", "Matthew Hindman"],
+    ["The Gemstone Marina", "Matthew Hindman"],
+    ["RNR Marina", "Matthew Hindman"],
+    ["Blue Lake Marina", "Julie Gattis"],
+    ["Blue Ridge Marina", "Julie Gattis"],
+    ["Pine Ridge Marina", "Julie Gattis"],
+    ["Skyview Marina", "Julie Gattis"],
+    ["Water Crest Marina", "Julie Gattis"],
+    ["Southern Venice Marina", "Brooke Rowlett"],
+    ["Southern Oasis Marina", "Brooke Rowlett"],
+    ["Southern Jetties Marina", "Brooke Rowlett"],
+    ["Sea Breeze Marina", "Brooke Rowlett"],
+    ["Seaside Landing Marina", "Brooke Rowlett"],
+    ["Seaside Marina", "Savannah Holt"],
+    ["Seascape Marina", "Savannah Holt"],
+    ["Breakaway Marina", "Savannah Holt"],
+    ["Southport Sound Marina", "Christopher Hendrickson"],
+    ["Southport Straits Marina", "Christopher Hendrickson"],
+    ["Destination Marina USA", "John Rigby"],
+    ["Southern Boatel", "Taylor Fitzsimmons"],
+    ["Southern Marinas @ Harbordale", "Maya Burkes"],
+    ["Next Gen Marina", "Kenneth Williams"],
+    ["The Only Marina", "Kenneth Williams"],
+    ["Best Bet Marina", "Kenneth Williams"],
+    ["Top Line Marina", "David Wilson"],
+    ["Baseline Marina", "Savannah Holt"],
+    ["WWII Buffs Marina", "Vickie Sorrell"],
+    ["Where the Boys Are Marina", "Vickie Sorrell"],
+    ["Home of the Wild Sea Marina", "Vickie Sorrell"],
+    ["Metaverse Marina", "Nicholas Thore"]
+  ]}
+];
+// ─── State ───
+let userName = null;
+let allVotes = {};     // shared: { "name::who": [voterName, ...] }
+let winnerKey = null;  // shared
+let ranking = [];      // personal curator ranking
+let faves = new Set(); // derived for the curator's "drawer"
+let round2 = [];       // personal finalists
+let winner = null;     // mirrors winnerKey for the curator UI
+
+let currentFilter = 'all';
+let searchTerm = '';
+let sortBy = 'cluster';
+let sortable = null;
+let isLoading = true;
+
+// ─── Storage: shared votes via Worker API, personal prefs via localStorage ───
+// API_BASE: leave '' when the Worker also serves this page (same origin).
+// If hosting the HTML elsewhere, set to your Worker URL e.g. 'https://marina-vote.you.workers.dev'
+const API_BASE = '';
+
+function lget(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+function lset(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+async function apiGetVotes() {
+  const r = await fetch(API_BASE + '/api/votes', { cache: 'no-store' });
+  if (!r.ok) throw new Error('GET /api/votes ' + r.status);
+  return await r.json(); // { votes: { "name::who": [user,...] }, winner: "key"|null }
+}
+async function apiPutMyVotes(names) {
+  const r = await fetch(API_BASE + '/api/vote', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ user: userName, names })
+  });
+  if (!r.ok) throw new Error('POST /api/vote ' + r.status);
+}
+async function apiPutWinner(w) {
+  const r = await fetch(API_BASE + '/api/winner', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ winner: w || '' })
+  });
+  if (!r.ok) throw new Error('POST /api/winner ' + r.status);
+}
+
+// ─── Realtime (WebSocket to the Durable Object) ───
+let ws = null;
+let wsReady = false;
+let wsRetry = 0;
+
+function wsUrl() {
+  if (API_BASE) return API_BASE.replace(/^http/, 'ws') + '/api/connect';
+  return (location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/api/connect';
+}
+
+function connectWS() {
+  try { ws = new WebSocket(wsUrl()); }
+  catch (e) { scheduleReconnect(); return; }
+  ws.onopen = () => { wsReady = true; wsRetry = 0; setLive(true); };
+  ws.onmessage = (ev) => {
+    let msg; try { msg = JSON.parse(ev.data); } catch { return; }
+    if (msg.type === 'state') {
+      allVotes = msg.votes || {};
+      winnerKey = msg.winner || null;
+      winner = winnerKey;
+      syncCuratorState();
+      applyRemoteState();
+    }
+  };
+  ws.onclose = () => { wsReady = false; setLive(false); scheduleReconnect(); };
+  ws.onerror = () => { try { ws.close(); } catch (e) {} };
+}
+
+function scheduleReconnect() {
+  wsRetry = Math.min(wsRetry + 1, 6);
+  setTimeout(connectWS, 1000 * wsRetry);
+}
+
+function setLive(on) {
+  const pill = document.getElementById('live-pill');
+  if (!pill) return;
+  pill.classList.toggle('on', on);
+  const t = pill.querySelector('.live-text');
+  if (t) t.textContent = on ? 'Live' : 'Reconnecting…';
+}
+
+function wsSend(obj) {
+  if (ws && wsReady) { try { ws.send(JSON.stringify(obj)); return true; } catch (e) {} }
+  return false;
+}
+
+function applyRemoteState() {
+  renderClusters();
+  updateCount();
+  renderDrawer();
+  if (document.getElementById('results-overlay').classList.contains('open')) renderResults();
+  // Stage overlay intentionally left alone so a remote vote can't disrupt active curation/drag.
+}
+
+async function loadAll() {
+  userName = lget('user_name') || null;
+  ranking = JSON.parse(lget('my_ranking') || '[]');
+  round2 = JSON.parse(lget('my_round2') || '[]');
+  if (lget('reveal_state') === '1') document.body.classList.add('names-revealed');
+  await fetchLatest();
+  connectWS();
+}
+
+function syncCuratorState() {
+  faves = new Set();
+  if (userName) {
+    for (const [key, list] of Object.entries(allVotes)) {
+      if (list.includes(userName)) faves.add(key);
+    }
+  }
+}
+
+async function fetchLatest() {
+  try {
+    const data = await apiGetVotes();
+    allVotes = data.votes || {};
+    winnerKey = data.winner || null;
+    winner = winnerKey;
+  } catch (e) { console.error('Fetch votes failed:', e); }
+  syncCuratorState();
+}
+
+function voteCount(key) { return (allVotes[key] || []).length; }
+function votersOf(key) { return allVotes[key] || []; }
+
+// ─── Name capture ───
+function showNameModal() {
+  document.getElementById('name-modal').classList.add('open');
+  setTimeout(() => document.getElementById('name-input').focus(), 200);
+}
+
+async function saveName() {
+  const input = document.getElementById('name-input');
+  const name = input.value.trim();
+  if (name.length < 2) {
+    input.classList.add('error');
+    input.focus();
+    return;
+  }
+  input.classList.remove('error');
+  userName = name;
+  lset('user_name', name);
+  await fetchLatest();
+  document.getElementById('name-modal').classList.remove('open');
+  updateTopbar();
+  renderClusters();
+  renderDrawer();
+  showToast(`Voting as ${name}`);
+}
+
+async function changeName() {
+  if (!confirm('Switch user? Any votes you cast under your current name stay with that name.')) return;
+  lset('user_name', '');
+  userName = null;
+  faves = new Set();
+  updateTopbar();
+  renderClusters();
+  renderDrawer();
+  showNameModal();
+}
+
+function updateTopbar() {
+  const btn = document.getElementById('user-btn');
+  if (!btn) return;
+  if (userName) {
+    btn.innerHTML = `<span class="dot"></span><span>Voting as <strong>${escapeHtml(userName)}</strong></span>`;
+    btn.title = 'Click to switch user';
+  } else {
+    btn.innerHTML = `<span class="dot"></span><span>Sign in to vote</span>`;
+    btn.title = 'Sign in';
+  }
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// ─── Voting (Worker API) ───
+async function castVote(key, row) {
+  if (!userName) { showNameModal(); return; }
+  const had = faves.has(key);
+  // Optimistic local update
+  if (had) { faves.delete(key); row && row.classList.remove('active'); }
+  else { faves.add(key); row && row.classList.add('active'); }
+  // Mirror into local aggregate for snappy badges
+  if (!allVotes[key]) allVotes[key] = [];
+  const idx = allVotes[key].indexOf(userName);
+  if (had && idx >= 0) allVotes[key].splice(idx, 1);
+  else if (!had && idx < 0) allVotes[key].push(userName);
+  if (allVotes[key].length === 0) delete allVotes[key];
+  updateBadge(key);
+  updateCount();
+  renderDrawer();
+  if (document.getElementById('stage-overlay').classList.contains('open')) renderStage();
+  // Persist my full vote list — realtime via WS, REST fallback
+  const sent = wsSend({ type: 'vote', user: userName, names: [...faves] });
+  if (!sent) {
+    try { await apiPutMyVotes([...faves]); }
+    catch (e) { console.error(e); showToast('Vote did not save — reconnecting'); }
+  }
+}
+
+function updateBadge(key) {
+  const c = voteCount(key);
+  document.querySelectorAll(`[data-key-badge="${cssEscape(key)}"]`).forEach(el => {
+    el.textContent = c;
+    el.classList.toggle('zero', c === 0);
+  });
+}
+function cssEscape(s) {
+  return s.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+}
+
+// ─── Save personal state (localStorage) ───
+async function saveRanking() { lset('my_ranking', JSON.stringify(ranking)); }
+async function saveRound2() { lset('my_round2', JSON.stringify(round2)); }
+async function saveWinner() {
+  winnerKey = winner;
+  const sent = wsSend({ type: 'winner', winner: winner || '' });
+  if (!sent) { try { await apiPutWinner(winner); } catch (e) { console.error(e); showToast('Could not save winner'); } }
+}
+
+// ─── Render: clusters ───
+function renderClusters() {
+  const sections = {
+    consensus: document.getElementById('clusters-consensus'),
+    heritage: document.getElementById('clusters-heritage'),
+    distinct: document.getElementById('clusters-distinct'),
+    standard: document.getElementById('clusters-standard'),
+    outlier: document.getElementById('clusters-outlier')
+  };
+  Object.values(sections).forEach(s => s.innerHTML = '');
+  let visibleSec = { consensus: false, heritage: false, distinct: false, standard: false, outlier: false };
+
+  clusters.forEach(c => {
+    let items = c.items.filter(([name, who]) => {
+      if (!searchTerm) return true;
+      const q = searchTerm.toLowerCase();
+      const revealed = document.body.classList.contains('names-revealed');
+      return name.toLowerCase().includes(q) || (revealed && who.toLowerCase().includes(q));
+    });
+    if (items.length === 0) return;
+    if (currentFilter !== 'all' && currentFilter !== c.section) return;
+    visibleSec[c.section] = true;
+
+    // Sort by votes if requested (within cluster)
+    if (sortBy === 'votes') {
+      items = [...items].sort((a, b) => voteCount(`${b[0]}::${b[1]}`) - voteCount(`${a[0]}::${a[1]}`));
+    }
+
+    const card = document.createElement('div');
+    card.className = `cluster ${c.tier}`;
+    if (c.section === 'heritage' || c.id === 'standalones') card.classList.add('span-2');
+
+    const head = document.createElement('div');
+    head.className = 'cluster-tier';
+    head.innerHTML = `<span>${c.tierLabel}</span><span class="count">${items.length} ${items.length === 1 ? 'name' : 'names'}</span>`;
+    card.appendChild(head);
+
+    const theme = document.createElement('h3');
+    theme.className = 'cluster-theme';
+    theme.textContent = c.theme;
+    card.appendChild(theme);
+
+    const blurb = document.createElement('p');
+    blurb.className = 'cluster-blurb';
+    blurb.textContent = c.blurb;
+    card.appendChild(blurb);
+
+    const rule = document.createElement('div');
+    rule.className = 'cluster-rule';
+    card.appendChild(rule);
+
+    const list = document.createElement('ul');
+    list.className = 'name-list';
+
+    items.forEach(([name, who]) => {
+      const key = `${name}::${who}`;
+      const row = document.createElement('li');
+      row.className = 'name-row';
+      const active = faves.has(key);
+      if (active) row.classList.add('active');
+      const count = voteCount(key);
+      row.dataset.key = key;
+      row.innerHTML = `
+        <span class="star"></span>
+        <span class="name-text">${escapeHtml(name)}</span>
+        <span class="name-meta">
+          <span class="vote-badge${count === 0 ? ' zero' : ''}" data-key-badge="${escapeHtml(key)}" title="${count} ${count === 1 ? 'vote' : 'votes'}">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>${count}</span>
+          </span>
+          <span class="name-by">${escapeHtml(who)}</span>
+        </span>
+      `;
+      row.onclick = () => castVote(key, row);
+      list.appendChild(row);
+    });
+
+    card.appendChild(list);
+    sections[c.section].appendChild(card);
+  });
+
+  const headers = document.querySelectorAll('.section-head');
+  headers.forEach((h, i) => {
+    const map = ['heritage', 'distinct', 'standard', 'outlier'];
+    if (map[i]) h.style.display = visibleSec[map[i]] ? '' : 'none';
+  });
+  const featured = document.getElementById('featured-card');
+  if (featured) featured.style.display = visibleSec.consensus ? '' : 'none';
+}
+
+// ─── Drawer ───
+function updateCount() {
+  document.getElementById('count').textContent = faves.size;
+}
+
+function renderDrawer() {
+  const body = document.getElementById('drawer-body');
+  const rankBtn = document.getElementById('rank-btn');
+  if (!body) return;
+  if (!userName) {
+    body.innerHTML = '<div class="drawer-empty">Sign in first to track your votes.</div>';
+    if (rankBtn) rankBtn.disabled = true;
+    document.getElementById('copy-btn').disabled = true;
+    document.getElementById('clear-btn').disabled = true;
+    return;
+  }
+  if (faves.size === 0) {
+    body.innerHTML = '<div class="drawer-empty">No votes cast yet.<br>Click any name to vote.</div>';
+    if (rankBtn) rankBtn.disabled = true;
+    document.getElementById('copy-btn').disabled = true;
+    document.getElementById('clear-btn').disabled = true;
+    return;
+  }
+  document.getElementById('copy-btn').disabled = false;
+  document.getElementById('clear-btn').disabled = false;
+  if (rankBtn) rankBtn.disabled = faves.size < 2;
+  body.innerHTML = '';
+  const myKeys = [...faves].sort((a, b) => voteCount(b) - voteCount(a));
+  myKeys.forEach((key, idx) => {
+    const [name, who] = key.split('::');
+    const item = document.createElement('div');
+    item.className = 'drawer-item';
+    const c = voteCount(key);
+    item.innerHTML = `
+      <div style="display: flex; align-items: baseline; gap: 12px; min-width: 0;">
+        <span style="font-family: 'Fraunces', serif; font-size: 14px; color: var(--ink-mute); font-variant-numeric: tabular-nums; min-width: 18px;">${idx + 1}</span>
+        <div style="min-width: 0;">
+          <div class="drawer-item-name">${escapeHtml(name)} <span style="color: var(--coral); font-size: 12px; font-weight: 500; margin-left: 4px;">★ ${c}</span></div>
+          <span class="drawer-item-by">${escapeHtml(who)}</span>
+        </div>
+      </div>
+      <button class="drawer-item-remove" aria-label="Remove">×</button>
+    `;
+    item.querySelector('.drawer-item-remove').onclick = () => castVote(key);
+    body.appendChild(item);
+  });
+}
+
+async function toggleDrawer() {
+  document.getElementById('drawer').classList.toggle('open');
+  document.getElementById('scrim').classList.toggle('open');
+  if (document.getElementById('drawer').classList.contains('open')) {
+    await fetchLatest();
+    renderDrawer();
+    renderClusters();
+  }
+}
+
+async function copyShortlist() {
+  if (faves.size === 0) return;
+  const revealed = document.body.classList.contains('names-revealed');
+  const text = [...faves].sort((a, b) => voteCount(b) - voteCount(a)).map((k, i) => {
+    const [name, who] = k.split('::');
+    const c = voteCount(k);
+    return revealed ? `${i + 1}. ${name}  —  ${who}  (★ ${c})` : `${i + 1}. ${name}  (★ ${c})`;
+  }).join('\n');
+  await navigator.clipboard.writeText(text);
+  showToast('Copied to clipboard');
+}
+
+async function clearShortlist() {
+  if (faves.size === 0) return;
+  if (!confirm('Withdraw all your votes? Other people\'s votes stay.')) return;
+  faves.clear();
+  ranking = [];
+  await saveRanking();
+  const sent = wsSend({ type: 'vote', user: userName, names: [] });
+  if (!sent) { try { await apiPutMyVotes([]); } catch (e) { console.error(e); } }
+  updateCount();
+  renderClusters();
+  renderDrawer();
+  showToast('Your votes withdrawn');
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+// ─── Multi-stage flow (curator) ───
+async function openStageView() {
+  if (faves.size === 0) return;
+  await fetchLatest();
+  // Seed the curation pool from my votes, ordered by team vote count
+  ranking = [...faves].sort((a, b) => voteCount(b) - voteCount(a));
+  round2 = round2.filter(k => ranking.includes(k));
+  await saveRanking();
+  _openStage();
+}
+
+async function openStageFromPool() {
+  // ranking already seeded by caller (e.g. results page)
+  _openStage();
+}
+
+function _openStage() {
+  document.getElementById('results-overlay').classList.remove('open');
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('scrim').classList.remove('open');
+  document.getElementById('stage-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  if (winner && ranking.includes(winner)) stage = 4;
+  else if (round2.length >= 2) stage = 3;
+  else stage = 1;
+  renderStage();
+}
+
+let stage = 1;
+
+function closeStageView() {
+  document.getElementById('stage-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+  if (sortable) { sortable.destroy(); sortable = null; }
+}
+
+function goToStage(n) {
+  if (sortable) { sortable.destroy(); sortable = null; }
+  stage = n;
+  renderStage();
+  document.getElementById('stage-overlay').scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderStage() {
+  const steps = document.querySelectorAll('#stepper .step');
+  const lines = document.querySelectorAll('#stepper .step-line');
+  steps.forEach((s, i) => {
+    s.classList.remove('active', 'done');
+    if (i + 1 < stage) s.classList.add('done');
+    else if (i + 1 === stage) s.classList.add('active');
+  });
+  lines.forEach((l, i) => l.classList.toggle('done', i + 1 < stage));
+  const labels = { 1: 'Round 01 · Rank', 2: 'Round 02 · Finalists', 3: 'Round 03 · Confirm', 4: 'The winner' };
+  document.getElementById('stage-kicker').innerHTML = labels[stage];
+  if (stage === 1) renderStage1();
+  else if (stage === 2) renderStage2();
+  else if (stage === 3) renderStage3();
+  else if (stage === 4) renderStage4();
+}
+
+function renderStage1() {
+  const ordered = ranking;
+  document.getElementById('stage-content').innerHTML = `
+    <h2 class="rank-title">Now <em>rank</em> them.</h2>
+    <p class="rank-sub">Your personal ranking, informed by the public vote counts. Drag to reorder. <strong>Top three get podium treatment.</strong></p>
+    <ul class="rank-list" id="rank-list"></ul>
+  `;
+  const list = document.getElementById('rank-list');
+  if (ordered.length === 0) {
+    list.innerHTML = '<li class="rank-empty">No votes yet.<br>Close and vote first.</li>';
+    renderStageActions();
+    return;
+  }
+  ordered.forEach((key, idx) => {
+    const [name, who] = key.split('::');
+    const rank = idx + 1;
+    const item = document.createElement('li');
+    item.className = 'rank-item';
+    if (rank === 1) item.classList.add('top-1');
+    else if (rank === 2) item.classList.add('top-2');
+    else if (rank === 3) item.classList.add('top-3');
+    item.dataset.key = key;
+    const c = voteCount(key);
+    item.innerHTML = `
+      <div class="rank-num">${rank}</div>
+      <div>
+        <div class="rank-name">${escapeHtml(name)} <span style="font-size: 13px; color: var(--coral); font-weight: 500; margin-left: 8px; font-family: 'Plus Jakarta Sans', sans-serif;">★ ${c}</span></div>
+        <div class="rank-by">${escapeHtml(who)}</div>
+      </div>
+      <div class="rank-handle" aria-label="Drag to reorder"><span></span><span></span><span></span></div>
+    `;
+    list.appendChild(item);
+  });
+  if (typeof Sortable !== 'undefined' && ordered.length >= 2) {
+    sortable = new Sortable(list, {
+      animation: 220, handle: '.rank-handle',
+      ghostClass: 'sortable-ghost', chosenClass: 'sortable-chosen', dragClass: 'sortable-drag',
+      onEnd: async () => {
+        const order = [...list.querySelectorAll('.rank-item')].map(el => el.dataset.key);
+        const others = ranking.filter(k => !order.includes(k));
+        ranking = [...order, ...others];
+        await saveRanking();
+        renderStage1();
+        renderDrawer();
+      }
+    });
+  }
+  renderStageActions();
+}
+
+async function renderStage2() {
+  if (round2.length === 0) {
+    const ordered = ranking;
+    round2 = ordered.slice(0, Math.min(5, ordered.length));
+    await saveRound2();
+  }
+  round2 = ranking.filter(k => round2.includes(k));
+  const ordered = ranking;
+  document.getElementById('stage-content').innerHTML = `
+    <h2 class="rank-title">Round 2 <em>finalists</em>.</h2>
+    <p class="rank-sub">Pick the names worthy of a final showdown. <strong>Two to five finalists work best.</strong> Your top five are pre-selected.</p>
+    <div class="round2-meta">
+      <span class="round2-meta-text">Finalists selected</span>
+      <span class="round2-meta-count" id="round2-count"><em>${round2.length}</em> of ${ordered.length}</span>
+    </div>
+    <div class="round2-grid" id="round2-grid"></div>
+  `;
+  const grid = document.getElementById('round2-grid');
+  ordered.forEach((key, idx) => {
+    const [name, who] = key.split('::');
+    const selected = round2.includes(key);
+    const c = voteCount(key);
+    const card = document.createElement('button');
+    card.className = 'round2-card' + (selected ? ' selected' : '');
+    card.dataset.key = key;
+    card.innerHTML = `
+      <div class="round2-check"></div>
+      <div class="round2-info">
+        <div class="round2-name">${escapeHtml(name)}</div>
+        <div class="round2-by">${escapeHtml(who)}</div>
+      </div>
+      <div class="round2-prev-rank"><span style="color: var(--coral); margin-right: 8px;">★ ${c}</span>№ ${idx + 1}</div>
+    `;
+    card.onclick = () => toggleRound2(key);
+    grid.appendChild(card);
+  });
+  renderStageActions();
+}
+
+async function toggleRound2(key) {
+  if (round2.includes(key)) round2 = round2.filter(k => k !== key);
+  else round2.push(key);
+  round2 = ranking.filter(k => round2.includes(k));
+  await saveRound2();
+  renderStage2();
+}
+
+let stage3Selected = null;
+function renderStage3() {
+  stage3Selected = winner || null;
+  document.getElementById('stage-content').innerHTML = `
+    <h2 class="rank-title">Choose the <em>winner</em>.</h2>
+    <p class="rank-sub">One name. Click a finalist to select, then crown it. The winner is shared with everyone viewing this.</p>
+    <div class="finalist-grid" id="finalist-grid"></div>
+  `;
+  const grid = document.getElementById('finalist-grid');
+  round2.forEach(key => {
+    const [name, who] = key.split('::');
+    const c = voteCount(key);
+    const card = document.createElement('button');
+    card.className = 'finalist-card' + (key === stage3Selected ? ' selected' : '');
+    card.dataset.key = key;
+    card.innerHTML = `
+      <div>
+        <div class="finalist-name">${escapeHtml(name)}</div>
+        <div class="finalist-by">${escapeHtml(who)} <span style="color: var(--coral); margin-left: 10px;">★ ${c} ${c === 1 ? 'vote' : 'votes'}</span></div>
+      </div>
+      <div class="finalist-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+      </div>
+    `;
+    card.onclick = () => {
+      stage3Selected = key;
+      document.querySelectorAll('.finalist-card').forEach(c => c.classList.toggle('selected', c.dataset.key === key));
+      renderStageActions();
+    };
+    grid.appendChild(card);
+  });
+  renderStageActions();
+}
+
+async function confirmWinner() {
+  if (!stage3Selected) return;
+  if (!confirm('Crown this name as the winner? Everyone viewing this artifact will see it.')) return;
+  winner = stage3Selected;
+  await saveWinner();
+  goToStage(4);
+}
+
+function renderStage4() {
+  if (!winner) { goToStage(3); return; }
+  const [name, who] = winner.split('::');
+  const c = voteCount(winner);
+  document.getElementById('stage-content').innerHTML = `
+    <div class="winner-stage">
+      <svg class="winner-ornament" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M24 4L28 18L42 20L31 30L34 44L24 36L14 44L17 30L6 20L20 18L24 4Z" fill="currentColor" stroke="none"/>
+      </svg>
+      <div class="winner-label">The winner</div>
+      <h1 class="winner-name">${escapeHtml(name)}</h1>
+      <div class="winner-by-block">
+        <p class="winner-by">submitted by ${escapeHtml(who)}</p>
+      </div>
+      <div class="winner-stats">${c} ${c === 1 ? 'vote' : 'votes'} <span style="color: var(--rule); margin: 0 8px;">·</span> Selected from 267 names</div>
+      <div class="winner-actions">
+        <button class="btn btn-primary" onclick="copyWinner()">Copy winner</button>
+        <button class="btn btn-ghost" onclick="goToStage(3)">Back</button>
+        <button class="btn btn-ghost" onclick="revealAndStay()" id="winner-reveal-btn">Reveal submitter</button>
+        <button class="btn btn-ghost" onclick="uncrownWinner()">Uncrown</button>
+      </div>
+    </div>
+  `;
+  if (document.body.classList.contains('names-revealed')) {
+    document.getElementById('winner-reveal-btn').style.display = 'none';
+  }
+  document.getElementById('stage-actions').innerHTML = '';
+}
+
+async function revealAndStay() {
+  if (!document.body.classList.contains('names-revealed')) {
+    document.body.classList.add('names-revealed');
+    lset('reveal_state', '1');
+    renderClusters();
+    renderDrawer();
+    renderStage4();
+  }
+}
+
+async function copyWinner() {
+  if (!winner) return;
+  const [name, who] = winner.split('::');
+  const c = voteCount(winner);
+  const revealed = document.body.classList.contains('names-revealed');
+  const text = revealed
+    ? `Winner: ${name}\nSubmitted by ${who}\n${c} votes across the team.`
+    : `Winner: ${name}\n${c} votes across the team.`;
+  await navigator.clipboard.writeText(text);
+  showToast('Winner copied');
+}
+
+async function uncrownWinner() {
+  if (!confirm('Uncrown the current winner? This clears it for everyone viewing.')) return;
+  winner = null;
+  await saveWinner();
+  goToStage(3);
+}
+
+function renderStageActions() {
+  const bar = document.getElementById('stage-actions');
+  const ordered = ranking;
+  if (stage === 1) {
+    const canAdvance = ordered.length >= 2;
+    bar.innerHTML = `
+      <button class="btn btn-ghost" onclick="copyRanking()">Copy ranking</button>
+      <button class="btn btn-primary" onclick="goToStage(2)" ${canAdvance ? '' : 'disabled'}>Pick finalists →</button>
+    `;
+  } else if (stage === 2) {
+    const canAdvance = round2.length >= 2 && round2.length <= 5;
+    bar.innerHTML = `
+      <button class="btn btn-ghost" onclick="goToStage(1)">← Back</button>
+      <button class="btn btn-primary" onclick="goToStage(3)" ${canAdvance ? '' : 'disabled'}>Choose winner →</button>
+    `;
+  } else if (stage === 3) {
+    bar.innerHTML = `
+      <button class="btn btn-ghost" onclick="goToStage(2)">← Back</button>
+      <button class="btn btn-primary" onclick="confirmWinner()" ${stage3Selected ? '' : 'disabled'}>Crown the winner ★</button>
+    `;
+  } else {
+    bar.innerHTML = '';
+  }
+}
+
+async function copyRanking() {
+  if (faves.size === 0) return;
+  const revealed = document.body.classList.contains('names-revealed');
+  const ordered = ranking;
+  const text = ordered.map((k, i) => {
+    const [name, who] = k.split('::');
+    const c = voteCount(k);
+    return revealed ? `${i + 1}. ${name}  —  ${who}  (★ ${c})` : `${i + 1}. ${name}  (★ ${c})`;
+  }).join('\n');
+  await navigator.clipboard.writeText(text);
+  showToast('Ranked list copied');
+}
+
+// ─── Filter chips ───
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.onclick = () => {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    currentFilter = chip.dataset.filter;
+    renderClusters();
+    window.scrollTo({ top: document.querySelector('.main').offsetTop - 120, behavior: 'smooth' });
+  };
+});
+
+document.getElementById('search').oninput = (e) => {
+  searchTerm = e.target.value.trim();
+  renderClusters();
+};
+
+const sortToggle = document.getElementById('sort-toggle');
+if (sortToggle) {
+  sortToggle.onclick = () => {
+    sortBy = sortBy === 'cluster' ? 'votes' : 'cluster';
+    sortToggle.textContent = sortBy === 'votes' ? 'Sorted by votes' : 'Sort by votes';
+    sortToggle.classList.toggle('active', sortBy === 'votes');
+    renderClusters();
+  };
+}
+
+function updateChipCounts() {
+  const counts = { all: 0, consensus: 0, heritage: 0, distinct: 0, standard: 0, outlier: 0 };
+  clusters.forEach(c => { counts.all += c.items.length; counts[c.section] += c.items.length; });
+  document.querySelectorAll('.chip').forEach(chip => {
+    const f = chip.dataset.filter;
+    const c = counts[f];
+    if (c) chip.innerHTML = chip.textContent.replace(/\s*\(\d+\)\s*$/, '') + ` <span class="count">${c}</span>`;
+  });
+}
+
+// ─── Reveal toggle ───
+async function toggleReveal() {
+  const next = !document.body.classList.contains('names-revealed');
+  document.body.classList.toggle('names-revealed', next);
+  lset('reveal_state', next ? '1' : '0');
+  renderClusters();
+  renderDrawer();
+  if (document.getElementById('stage-overlay').classList.contains('open')) renderStage();
+  showToast(next ? 'Submitters revealed' : 'Submitters hidden');
+}
+
+// ─── ESC key ───
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    if (document.getElementById('results-overlay').classList.contains('open')) closeResults();
+    else if (document.getElementById('stage-overlay').classList.contains('open')) closeStageView();
+    else if (document.getElementById('drawer').classList.contains('open')) toggleDrawer();
+  }
+});
+
+// ─── Refresh button ───
+async function refreshVotes() {
+  await fetchLatest();
+  renderClusters();
+  renderDrawer();
+  if (document.getElementById('stage-overlay').classList.contains('open')) renderStage();
+  if (document.getElementById('results-overlay').classList.contains('open')) renderResults();
+  showToast('Refreshed');
+}
+
+// ─── Results / leaderboard ───
+async function openResults() {
+  await fetchLatest();
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('scrim').classList.remove('open');
+  document.getElementById('results-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('results-overlay').scrollTo({ top: 0 });
+  renderResults();
+}
+
+function closeResults() {
+  document.getElementById('results-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function rankedKeys() {
+  return Object.keys(allVotes).filter(k => voteCount(k) > 0).sort((a, b) => voteCount(b) - voteCount(a));
+}
+
+function renderResults() {
+  const keys = rankedKeys();
+  const totalVotes = keys.reduce((s, k) => s + voteCount(k), 0);
+  const allVoters = new Set();
+  keys.forEach(k => votersOf(k).forEach(v => allVoters.add(v)));
+  document.getElementById('results-stats').innerHTML = `
+    <div><div class="results-stat-num">${totalVotes}</div><div class="results-stat-label">Votes cast</div></div>
+    <div><div class="results-stat-num"><em>${allVoters.size}</em></div><div class="results-stat-label">Voters</div></div>
+    <div><div class="results-stat-num"><em>${keys.length}</em></div><div class="results-stat-label">Names with votes</div></div>
+  `;
+  const list = document.getElementById('results-list');
+  list.innerHTML = '';
+  if (keys.length === 0) {
+    list.innerHTML = '<li class="rank-empty">No votes yet.<br>Publish the artifact, share the link, and have the team vote.</li>';
+    document.getElementById('results-actions').innerHTML = `<button class="btn btn-ghost" onclick="closeResults()">Close</button>`;
+    return;
+  }
+  const revealed = document.body.classList.contains('names-revealed');
+  keys.forEach((key, idx) => {
+    const [name, who] = key.split('::');
+    const rank = idx + 1;
+    const c = voteCount(key);
+    const vs = votersOf(key);
+    const item = document.createElement('li');
+    item.className = 'rank-item';
+    if (rank === 1) item.classList.add('top-1');
+    else if (rank === 2) item.classList.add('top-2');
+    else if (rank === 3) item.classList.add('top-3');
+    item.innerHTML = `
+      <div class="rank-num">${rank}</div>
+      <div style="min-width: 0;">
+        <div class="rank-name">${escapeHtml(name)} <span class="results-count-big">★ ${c}</span></div>
+        <div class="results-voters"><strong>Voted by</strong> ${vs.map(escapeHtml).join(', ')}</div>
+        ${revealed ? `<div class="rank-by" style="margin-top: 6px;">submitted by ${escapeHtml(who)}</div>` : ''}
+      </div>
+      <div></div>
+    `;
+    list.appendChild(item);
+  });
+  document.getElementById('results-actions').innerHTML = `
+    <button class="btn btn-primary" onclick="rankTopVotes()">Narrow the top picks →</button>
+    <button class="btn btn-ghost" onclick="copyResults()">Copy results</button>
+    <button class="btn btn-ghost" onclick="closeResults()">Close</button>
+  `;
+}
+
+async function rankTopVotes() {
+  const keys = rankedKeys().slice(0, 12);
+  if (keys.length < 2) { showToast('Need at least 2 voted names'); return; }
+  ranking = keys;
+  round2 = round2.filter(k => ranking.includes(k));
+  await saveRanking();
+  closeResults();
+  openStageFromPool();
+}
+
+async function copyResults() {
+  const keys = rankedKeys();
+  if (keys.length === 0) return;
+  const revealed = document.body.classList.contains('names-revealed');
+  const text = keys.map((k, i) => {
+    const [name, who] = k.split('::');
+    const c = voteCount(k);
+    const vs = votersOf(k).join(', ');
+    return revealed
+      ? `${i + 1}. ${name} — ${c} ${c === 1 ? 'vote' : 'votes'} (${who}) [${vs}]`
+      : `${i + 1}. ${name} — ${c} ${c === 1 ? 'vote' : 'votes'}`;
+  }).join('\n');
+  await navigator.clipboard.writeText(text);
+  showToast('Results copied');
+}
+
+// ─── Init ───
+(async function init() {
+  updateChipCounts();
+  await loadAll();
+  updateTopbar();
+  renderClusters();
+  updateCount();
+  renderDrawer();
+  if (!userName) showNameModal();
+})();
+</script>
+
+</body>
+</html>
