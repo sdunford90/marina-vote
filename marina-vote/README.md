@@ -5,6 +5,8 @@ streams votes live to every connected browser. Anyone with the link can vote —
 no Claude account, no sign-up — and everyone's tallies update instantly without
 refreshing.
 
+
+
 ```
 marina-vote/
   wrangler.jsonc      Worker + Durable Object + static-assets config
